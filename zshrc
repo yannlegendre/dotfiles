@@ -32,3 +32,9 @@ export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
+
+alias code="cd ${HOME}/code/yannlegendre"
+alias rr="rails routes"
+alias rc="rails console"
+alias rs="rails server"
+alias web="webpack-dev-server"
