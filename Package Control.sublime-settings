@@ -8,13 +8,19 @@
 		"AdvancedNewFile",
 		"All Autocomplete",
 		"Babel",
+		"BracketHighlighter",
+		"Color Highlighter",
+		"ColorPicker",
 		"Emmet",
 		"ERB Snippets",
 		"Git",
 		"GitGutter",
 		"Package Control",
+		"React ES6 Snippets",
 		"SCSS",
+		"StandardSnippets",
 		"SublimeLinter",
+		"SublimeLinter-eslint",
 		"SublimeLinter-rubocop"
 	]
 }

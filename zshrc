@@ -38,3 +38,10 @@ alias rr="rails routes"
 alias rc="rails console"
 alias rs="rails server"
 alias web="webpack-dev-server"
+alias zs="subl ~/.zshrc"
+
+function gacp() {
+    git add .
+    git commit -m "$1"
+    git push origin master
+}
