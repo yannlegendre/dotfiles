@@ -33,15 +33,30 @@ export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
-alias code="cd ${HOME}/code/yannlegendre"
-alias rr="rails routes"
-alias rc="rails console"
-alias rs="rails server"
+alias sk="cd ${HOME}/code/yannlegendre/skaplock"
+alias rr="bin/rails routes"
+alias rc="bin/rails console"
+alias rs="bin/rails server"
 alias web="webpack-dev-server"
 alias zs="subl ~/.zshrc"
+alias \$=''
+alias pip="pip3"
+alias rdm="bin/rails db:migrate"
+alias op="xdg-open"
+alias proj="cd ~/code/yannlegendre"
+alias wagon="cd ~/code/yannlegendre/lewagon"
+alias sz="source ~/.zshrc"
+
+
+function demo() {
+  touch "$1" && st "$1"
+}
 
 function gacp() {
     git add .
     git commit -m "$1"
     git push origin master
 }
+
+#add android SDK to PATH
+export ANDROID_SDK="${HOME}/Android/Sdk"
