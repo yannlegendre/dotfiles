@@ -33,19 +33,27 @@ export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
-alias sk="cd ${HOME}/code/yannlegendre/skaplock"
 alias rr="bin/rails routes"
 alias rc="bin/rails console"
 alias rs="bin/rails server"
-alias web="webpack-dev-server"
-alias zs="subl ~/.zshrc"
-alias \$=''
-alias pip="pip3"
 alias rdm="bin/rails db:migrate"
-alias op="xdg-open"
+alias web="webpack-dev-server"
+
+alias zs="subl ~/.zshrc"
+alias sz="source ~/.zshrc"
+
+alias \$=''
+
+alias grec="git reset HEAD^"
+alias hardpull="git fetch && git reset origin/$(git_current_branch) --hard"
+
+
+
+alias dotfiles="cd ~/dotfiles"
 alias proj="cd ~/code/yannlegendre"
 alias wagon="cd ~/code/yannlegendre/lewagon"
-alias sz="source ~/.zshrc"
+
+alias pa="cd ~/perangusta"
 
 
 function demo() {
@@ -57,6 +65,3 @@ function gacp() {
     git commit -m "$1"
     git push origin master
 }
-
-#add android SDK to PATH
-export ANDROID_SDK="${HOME}/Android/Sdk"
