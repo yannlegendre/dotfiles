@@ -35,9 +35,12 @@ export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 
 alias rr="bin/rails routes"
 alias rc="bin/rails console"
-alias rs="bin/rails server"
+alias rs="bin/rails server -p 5000"
 alias rdm="bin/rails db:migrate"
 alias web="webpack-dev-server"
+alias be="bundle exec"
+alias ber="bundle exec rspec"
+alias spr="spring rspec"
 
 alias zs="subl ~/.zshrc"
 alias sz="source ~/.zshrc"
